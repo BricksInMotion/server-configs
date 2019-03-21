@@ -1,13 +1,6 @@
 version: '3.6'
 
 services:
-  bim-ghost:
-    image: ghost:alpine
-    volumes:
-      - /bim-site/ghost:/var/lib/ghost/content
-    ports:
-      - 127.0.0.1:3002:2368
-
   bim-film-directory:
     image: bim-directory:latest
     volumes:
