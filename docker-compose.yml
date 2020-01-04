@@ -18,7 +18,7 @@ services:
       volumes:
         - ../film-directory/sql:/sql
         - ../film-directory/secrets:/secrets
-        - ../bim-films-db/:/var/lib/mysql
+        - ../bim-database/:/var/lib/mysql
       ports:
         - 127.0.0.1:3306:3306
       environment:
