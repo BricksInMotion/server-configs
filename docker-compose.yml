@@ -4,6 +4,7 @@ services:
   film-directory:
     image: bim-film-directory:latest
     container_name: film-directory
+    restart: unless-stopped
     volumes:
       - ../film-directory:/var/www/html
     ports:
